@@ -36,6 +36,11 @@ public class NewProjectTest {
                 .getText())
                 .isNotNull()
                 .isEqualTo("testNat");
-        //$(xpath("")).click();
+        //$(xpath("//tr[@class="project-row"]//a[text()='testNat']")).click();
+        //$(xpath("//a[text()='Delete']")).click();
+        //$(xpath("//button[@type='submit']")).click();
+        $(xpath("//img[@src=\"https://d2cxucsjd6xvsd.cloudfront.net/public/user/thumb/72f8afc62cb1a48c6699d0ef54259acf.jpg\"]")).click();
+        $(xpath("//span[text()='Sign out']")).click();
+
     }
 }
